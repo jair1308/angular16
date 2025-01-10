@@ -1,0 +1,12 @@
+<h2>Listado de elementos</h2>
+<div class="listado-container">
+  <h2>Listado de Items</h2>
+  <ul class="listado">
+    <li *ngFor="let item of items" class="list-item">
+      {{ item }}
+    </li>
+  </ul>
+</div>
+<div class="button-container">
+  <button class="btn" (click)="logout()">Cerrar sesión</button>
+</div>

@@ -1,0 +1,27 @@
+<!-- login.component.html -->
+<div class="login-container">
+    <h2>Iniciar sesión</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <input 
+          type="email" 
+          formControlName="email" 
+          class="input-field" 
+          placeholder="Correo electrónico" 
+          required
+        />
+      </div>
+      <div class="input-group">
+        <input 
+          type="password" 
+          formControlName="password" 
+          class="input-field" 
+          placeholder="Contraseña" 
+          required
+        />
+      </div>
+      <button type="submit" class="login-button" [disabled]="loginForm.invalid">Entrar</button>
+      <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+    </form>
+  </div>
+  
